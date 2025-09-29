@@ -22,9 +22,7 @@ modern-cybersecurity/
 │ ├── hw2/  
 │ └── ...  
 │  
-├── projects/ # Course projects or larger assignments  
-│  
-├── images/ # Diagrams, screenshots, or figures for documentation  
+├── projects/ # Course projects or larger assignments    
 │  
 └── README.md # Root documentation (this file)  
 
@@ -60,4 +58,5 @@ Always follow your institution’s academic integrity policies.
 - B.S. Computer Science (Networks & Security Concentration)  
 - Colorado State University  
 - Focus: Cloud Security Engineering & Cybersecurity Architecture  
+
 
