@@ -1,0 +1,141 @@
+# Nmap 7.94SVN scan initiated Wed Sep 24 16:21:09 2025 as: nmap -p 445 --script smb-enum-shares,smb-enum-users -oN scan3_smb.txt 10.89.0.6
+Nmap scan report for 10.89.0.6
+Host is up (0.00024s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: <blank>
+|   \\10.89.0.6\ADMIN$: 
+|     Type: STYPE_IPC
+|     Comment: IPC Service (6fa431d36d7f server (Samba 3.0.20-Debian))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.89.0.6\IPC$: 
+|     Type: STYPE_IPC
+|     Comment: IPC Service (6fa431d36d7f server (Samba 3.0.20-Debian))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|   \\10.89.0.6\opt: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.89.0.6\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|   \\10.89.0.6\tmp: 
+|     Type: STYPE_DISKTREE
+|     Comment: oh noes!
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|_    Anonymous access: READ/WRITE
+| smb-enum-users: 
+|   6FA431D36D7F\backup (RID: 1068)
+|     Full name:   backup
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\bin (RID: 1004)
+|     Full name:   bin
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\bind (RID: 1210)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\daemon (RID: 1002)
+|     Full name:   daemon
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\dhcp (RID: 1202)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\distccd (RID: 1222)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\ftp (RID: 1214)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\games (RID: 1010)
+|     Full name:   games
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\gnats (RID: 1082)
+|     Full name:   Gnats Bug-Reporting System (admin)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\irc (RID: 1078)
+|     Full name:   ircd
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\klog (RID: 1206)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\libuuid (RID: 1200)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\list (RID: 1076)
+|     Full name:   Mailing List Manager
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\lp (RID: 1014)
+|     Full name:   lp
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\mail (RID: 1016)
+|     Full name:   mail
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\man (RID: 1012)
+|     Full name:   man
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\msfadmin (RID: 3000)
+|     Full name:   msfadmin,,,
+|     Flags:       Normal user account
+|   6FA431D36D7F\mysql (RID: 1218)
+|     Full name:   MySQL Server,,,
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\news (RID: 1018)
+|     Full name:   news
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\nobody (RID: 501)
+|     Full name:   nobody
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\postfix (RID: 1212)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\postgres (RID: 1216)
+|     Full name:   PostgreSQL administrator,,,
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\proftpd (RID: 1226)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\proxy (RID: 1026)
+|     Full name:   proxy
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\root (RID: 1000)
+|     Full name:   root
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\service (RID: 3004)
+|     Full name:   ,,,
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\sshd (RID: 1208)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\sync (RID: 1008)
+|     Full name:   sync
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\sys (RID: 1006)
+|     Full name:   sys
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\syslog (RID: 1204)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\telnetd (RID: 1224)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\tomcat55 (RID: 1220)
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\user (RID: 3002)
+|     Full name:   just a user,111,,
+|     Flags:       Normal user account
+|   6FA431D36D7F\uucp (RID: 1020)
+|     Full name:   uucp
+|     Flags:       Normal user account, Account disabled
+|   6FA431D36D7F\www-data (RID: 1066)
+|     Full name:   www-data
+|_    Flags:       Normal user account, Account disabled
+
+# Nmap done at Wed Sep 24 16:21:09 2025 -- 1 IP address (1 host up) scanned in 0.50 seconds
