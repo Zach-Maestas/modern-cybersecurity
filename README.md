@@ -9,24 +9,24 @@ The goal of this repo is to track progress, organize deliverables, and serve as 
 
 ---
 
-## 📂 Repository Structure
-modern-cybersecurity/
+## 📂 Repository Structure  
+modern-cybersecurity/  
 │
-├── labs/ # Lab assignments and exercises
-│ ├── lab1/
-│ ├── lab2/
-│ └── ...
-│
-├── homeworks/ # Written homework assignments
-│ ├── hw1/
-│ ├── hw2/
-│ └── ...
-│
-├── projects/ # Course projects or larger assignments
-│
-├── images/ # Diagrams, screenshots, or figures for documentation
-│
-└── README.md # Root documentation (this file)
+├── labs/ # Lab assignments and exercises  
+│ ├── lab1/  
+│ ├── lab2/  
+│ └── ...  
+│  
+├── homeworks/ # Written homework assignments  
+│ ├── hw1/  
+│ ├── hw2/  
+│ └── ...  
+│  
+├── projects/ # Course projects or larger assignments  
+│  
+├── images/ # Diagrams, screenshots, or figures for documentation  
+│  
+└── README.md # Root documentation (this file)  
 
 ---
 
@@ -60,3 +60,4 @@ Always follow your institution’s academic integrity policies.
 - B.S. Computer Science (Networks & Security Concentration)  
 - Colorado State University  
 - Focus: Cloud Security Engineering & Cybersecurity Architecture  
+
