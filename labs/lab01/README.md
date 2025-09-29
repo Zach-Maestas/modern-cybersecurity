@@ -1,4 +1,4 @@
-# Homework 5 – Service Enumeration & Discovery (FTP / SMB / HTTP)
+# Lab 1 – Service Enumeration & Discovery (FTP / SMB / HTTP)
 **Course:** CS 456 – Modern Cybersecurity  
 **Repo path:** `modern-cybersecurity/homeworks/hw5`
 
