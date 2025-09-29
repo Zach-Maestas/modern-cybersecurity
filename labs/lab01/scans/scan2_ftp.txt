@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Wed Sep 24 15:57:12 2025 as: nmap -p 21 --script ftp-anon,ftp-brute -oN scan2_ftp.txt 10.89.0.6
+Nmap scan report for 10.89.0.6
+Host is up (0.000045s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-brute: 
+|   Accounts: 
+|     user:user - Valid credentials
+|_  Statistics: Performed 3852 guesses in 603 seconds, average tps: 6.1
+MAC Address: 42:1C:D6:BD:65:B9 (Unknown)
+
+# Nmap done at Wed Sep 24 16:07:15 2025 -- 1 IP address (1 host up) scanned in 602.78 seconds

@@ -1,0 +1,45 @@
+# Nmap 7.94SVN scan initiated Wed Sep 24 16:22:39 2025 as: nmap -p 80,8180 --script http-enum -oN scan4_http.txt 10.89.0.6
+Nmap scan report for 10.89.0.6
+Host is up (0.00025s latency).
+
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-enum: 
+|   /tikiwiki/: Tikiwiki
+|   /test/: Test page
+|   /phpinfo.php: Possible information file
+|   /phpMyAdmin/: phpMyAdmin
+|   /doc/: Potentially interesting directory w/ listing on 'apache/2.2.8 (ubuntu) dav/2'
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /index/: Potentially interesting folder
+8180/tcp open  unknown
+| http-enum: 
+|   /admin/: Possible admin folder
+|   /admin/index.html: Possible admin folder
+|   /admin/login.html: Possible admin folder
+|   /admin/admin.html: Possible admin folder
+|   /admin/account.html: Possible admin folder
+|   /admin/admin_login.html: Possible admin folder
+|   /admin/home.html: Possible admin folder
+|   /admin/admin-login.html: Possible admin folder
+|   /admin/adminLogin.html: Possible admin folder
+|   /admin/controlpanel.html: Possible admin folder
+|   /admin/cp.html: Possible admin folder
+|   /admin/index.jsp: Possible admin folder
+|   /admin/login.jsp: Possible admin folder
+|   /admin/admin.jsp: Possible admin folder
+|   /admin/home.jsp: Possible admin folder
+|   /admin/controlpanel.jsp: Possible admin folder
+|   /admin/admin-login.jsp: Possible admin folder
+|   /admin/cp.jsp: Possible admin folder
+|   /admin/account.jsp: Possible admin folder
+|   /admin/admin_login.jsp: Possible admin folder
+|   /admin/adminLogin.jsp: Possible admin folder
+|   /manager/html/upload: Apache Tomcat (401 Unauthorized)
+|   /manager/html: Apache Tomcat (401 Unauthorized)
+|   /admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html: OpenCart/FCKeditor File upload
+|   /admin/includes/FCKeditor/editor/filemanager/upload/test.html: ASP Simple Blog / FCKeditor File Upload
+|   /admin/jscript/upload.html: Lizard Cart/Remote File upload
+|_  /webdav/: Potentially interesting folder
+
+# Nmap done at Wed Sep 24 16:22:50 2025 -- 1 IP address (1 host up) scanned in 10.72 seconds
